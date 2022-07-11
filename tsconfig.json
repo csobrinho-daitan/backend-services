@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2017",                                  
+    "lib": ["es2017"], 
+    "module": "commonjs",                                
+    "rootDir": "./src",                                                                     
+    "typeRoots": [
+      "./node_modules/@types",
+    ],                                  /* Specify multiple folders that act like `./node_modules/@types`. */                               /* Disallow `import`s, `require`s or `<reference>`s from expanding the number of files TypeScript should add to a project. */
+     "allowJs": true,                                  /* Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files. */                                  /* Specify a file that bundles all outputs into one JavaScript file. If `declaration` is true, also designates a file that bundles all .d.ts output. */
+    "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
+    "removeComments": true,                           /* Disable emitting comments. */             /* Allow 'import x from y' when a module doesn't have a default export. */
+    "esModuleInterop": true,
+    "skipLibCheck": true,                           
+  },
+  "include": [
+    "src/**/*",
+    ".tests/**/*"
+, "src/server.ts"  ] 
+}
