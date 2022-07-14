@@ -12,8 +12,6 @@ app.get('/', (req, res) => {
   });
 });
 
-console.log('testing commiting into master');
-
 app.listen(port, () => {
   console.log(`[server]: server is running inside Docker at https://localhost:${port}`);
 });
