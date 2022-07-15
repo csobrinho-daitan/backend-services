@@ -1,6 +1,7 @@
 import 'dotenv/config';
 
 import express from 'express';
+import { hello } from './functions/helloWorld';
 
 const app = express();
 
@@ -8,11 +9,9 @@ const port = process.env.PORT;
 
 app.get('/', (req, res) => {
   return res.send({
-    message: 'Hello from Docker',
+    message: hello(),
   });
 });
-
-console.log('testing commiting into master');
 
 app.listen(port, () => {
   console.log(`[server]: server is running inside Docker at https://localhost:${port}`);
