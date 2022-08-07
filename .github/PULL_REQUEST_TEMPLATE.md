@@ -15,7 +15,7 @@ Please delete options that are not relevant.
 
 
 # Checklist:
-
+- [ ] My PR's title matches my ticket's
 - [ ] I notified people about my PR
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
